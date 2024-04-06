@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      SampleApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+
+    <h1>FORM LOGIN</h1>
+
+    <ion-input label="Username"
+    [(ngModel)]="form.username" [ngModelOptions]="{standalone: true}"
+    label-placement="floating" fill="outline" placeholder="Masukan Username"></ion-input>
+
+    <br>
+
+    <ion-input type="password" label="Password"
+    [(ngModel)]="form.password" [ngModelOptions]="{standalone: true}"
+    label-placement="floating" fill="outline" placeholder="Masukan Password"></ion-input>
+
+    <br>
+
+    <ion-button (click)="onSubmit()" expand="block">LOGIN</ion-button>
+
+  </div>
+
+</ion-content>
